@@ -1,0 +1,55 @@
+
+@{
+    ViewData["Title"] = "Math Calculator";
+}
+
+
+
+@if (ViewData["selection"].ToString() == "Add")
+{
+    <h2>Addition</h2>
+    <p>@ViewData["left"] Plus 
+       @ViewData["right"] Equals 
+       @ViewData["result"]</p>
+}
+@if (ViewData["selection"].ToString() == "Subtract")
+{
+    <h2>Subtraction</h2>
+    <p>
+        @ViewData["left"] Minus
+    @ViewData["right"] Equals
+    @ViewData["result"]
+</p>
+}
+@if (ViewData["selection"].ToString() == "Multiply")
+{
+    <h2>Multiplication</h2>
+    <p>
+        @ViewData["left"] Times
+        @ViewData["right"] Equals
+        @ViewData["result"]
+    </p>
+}
+
+@if (ViewData["selection"].ToString() == "Divide")
+{
+    <h2>Division</h2>
+    <p>
+        @ViewData["left"] Divided By
+        @ViewData["right"] Equals
+        @ViewData["result"]
+    </p>
+}
+
+@if (ViewData["selection"].ToString() == "Modulus")
+{
+    <h2>Modulus</h2>
+    <p>
+        @ViewData["left"] Mod
+        @ViewData["right"] Equals
+        @ViewData["result"]
+    </p>
+}
+
+
+

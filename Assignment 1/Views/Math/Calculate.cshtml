@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Math Calculator";
+}
+
+<form asp-controller="Math" asp-action="DoCalculation" method="post">
+    <select id="selection" name="selection">
+        <option value="Add">Add</option>
+        <option value="Subtract">Subtract</option>
+        <option value="Multiply">Multiply</option>
+        <option value="Divide">Divide</option>
+        <option value="Modulus">Modulus</option>
+    </select><br />
+    <!-- Input and Submit elements -->
+    <label class="label label-primary" for="left">Enter Left Operand</label>
+    <input id="left" name="left" type="text" /><br />
+    <label class="label label-primary" for="right">Enter Right Operand</label>
+    <input id="right" name="right" type="text" /><br />
+    <input class="btn btn-lg btn-info" type="submit" value="Submit" />
+</form>
